@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giày thời trang DDShop</title>
+    <link rel="stylesheet" href="lamdep.css">
+    <link rel="stylesheet" href="./themify-icons-font/themify-icons/themify-icons.css">
+</head> 
+<body>
+    <!-- Header -->
+    <div id="topbar">
+        <ul class="top-right">
+            <li><a href="">Tài khoản</a>
+                <ul class="accout">
+                    <li><a href="">Đăng nhập</a></li>
+                    <li><a href="">Đăng ký</a></li>
+                </ul>
+            </li> 
+            <li><a href="#">
+                Giỏ hàng
+                <i class="ti-bag"></i>
+                </a>
+            </li>
+            <li class="sub-shoe" onclick="appearDel()">Sửa sản phẩm <i class="ti-minus"></i></li>
+            <li class="add-shoe">Thêm sản phẩm <i class="ti-plus"></i></li>
+        </ul>
+    </div>
+
+    <div id="navi">
+        <div id="logo">
+            <a href="#"><img class="logo-image" src="d_logo-03_4x.webp" alt="DDShop"></a>
+            <a class="logo-name" href="#">DDShop</a>
+        </div>
+                
+        <div class="search-bt">
+            <i class="search-ic ti-search"></i>
+        </div>
+    </div>    
+    <div id="header">
+        <ul id="nav">
+            <li><a href="">Trang chủ</a></li>
+            <li>
+                <a href="">Thương hiệu nổi bật</a>
+                <ul class="nav_TH">
+                    <li><a href="">Nike</a></li>
+                    <li><a href="">Adidas</a></li>
+                    <li><a href="">Converse</a></li>
+                    <li><a href="">Puma</a></li>
+                    <li><a href="">Vans</a></li>
+                    <li><a href="">Minzuno</a></li>
+                    <li><a href="">New Balance</a></li>
+                    <li><a href="">Gucci</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Giới tính</a>
+                <ul class="nav_GT">
+                    <li><a href="">Nam</a></li>
+                    <li><a href="">Nữ</a></li>
+                    <li><a href="">Unisex</a></li>
+                    <li><a href="">Trẻ em</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Phong cách</a>
+                <ul class="nav_PC">
+                    <li><a href="">Giày Sneaker</a></li>
+                    <li><a href="">Giày Thể thao</a></li>
+                    <li><a href="">Giày Hở gót</a></li>
+                    <li><a href="">Giày Bệt</a></li>
+                    <li><a href="">Giày Sandals</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Màu sắc</a>
+                <ul class="nav_MS">
+                    <li><a href="">Đỏ</a></li>
+                    <li><a href="">Cam</a></li>
+                    <li><a href="">Vàng</a></li>
+                    <li><a href="">Xanh dương</a></li>
+                    <li><a href="">Xanh lá</a></li>
+                    <li><a href="">Hồng</a></li>
+                    <li><a href="">Tím</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">Chất liệu</a>
+                <ul class="nav_CL">
+                    <li><a href="">Giày da thật</a></li>
+                    <li><a href="">Giày vải</a></li>
+                    <li><a href="">Giày da lộn</a></li>
+                    <li><a href="">Giày da tổng hợp</a></li>
+                    <li><a href="">Giày canvas</a></li>
+                    <li><a href="">Giày PU</a></li>
+                </ul>
+            </li>
+            <li><a href="">Liên hệ</a></li>
+            <div class="clear"></div>
+        </ul>
+    </div>
+
+    <!-- slider -->
+    <a href=""><img class="banner" src="./assets/img/hunter_x_banner__3__d4d6dee623c447f6a64c6ec219a85b77_master.jpg" alt="banner"></a>
+    <!-- <div id="center"> -->
+    <!-- slidebar -->
+        <div id="slidebar">
+            <ul class="SB-Menu">
+                <li><div>Thương hiệu</div>
+                    <ul class="menu-brand">
+                        <li><input type="checkbox" id="Nike">    
+                            <label for="Nike">Nike</label></li>
+                        <li><input type="checkbox" id="Adidas">
+                            <label for="Adidas">Adidas</label></li>
+                        <li><input type="checkbox" id="Converse">
+                            <label for="Converse">Converse</label></li>
+                        <li><input type="checkbox" id="Puma">
+                            <label for="Puma">Puma</label></li>
+                        <li><input type="checkbox" id="Vans">
+                            <label for="Vans">Vans</label></li>
+                        <li><input type="checkbox" id="Minzuno">
+                            <label for="Minzuno">Minzuno</label></li>
+                        <li><input type="checkbox" id="New Balance">
+                            <label for="New Balance">New Balance</label></li>
+                        <li><input type="checkbox" id="Gucci">
+                            <label for="Gucci">Gucci</label></li>
+                    </ul>
+                </li>
+                    
+                <li><div>Size giày</div>
+                    <ul class="menu-size">
+                        <li><input type="checkbox" id="35">
+                            <label for="35">35</label></li>
+                        <li><input type="checkbox" id="36">
+                            <label for="36">36</label></li>
+                        <li><input type="checkbox" id="37">
+                            <label for="37">37</label></li>
+                        <li><input type="checkbox" id="38">
+                            <label for="38">38</label></li>
+                        <li><input type="checkbox" id="39">
+                            <label for="39">39</label></li>
+                        <li><input type="checkbox" id="40">
+                            <label for="40">40</label></li>
+                        <li><input type="checkbox" id="41">
+                            <label for="41">41</label></li>
+                        <li><input type="checkbox" id="42">
+                            <label for="42">42</label></li>
+                        <li><input type="checkbox" id="43">
+                            <label for="43">43</label></li>
+                    </ul>
+                </li>
+                    
+                <li><div>Xuất xứ</div>
+                    <ul class="menu menu-origin">
+                        <li><input type="checkbox" id="England">
+                            <label for="England">Anh</label></li>
+                        <li><input type="checkbox" id="Korea">
+                            <label for="Korea">Hàn Quốc</label></li>
+                        <li><input type="checkbox" id="America">
+                            <label for="America">Mỹ</label></li>
+                        <li><input type="checkbox" id="Jap">
+                            <label for="Jap">Nhật Bản</label></li>
+                        <li><input type="checkbox" id="China">
+                            <label for="China">Trung Quốc</label></li>
+                        <li><input type="checkbox" id="Vietnam">
+                            <label for="Vietnam">Việt Nam</label></li>
+                    </ul>
+                </li>
+                    
+                <li><div>Màu sắc</div>
+                    <ul class="menu menu-color">
+                        <li><input type="checkbox" id="Red">
+                            <label for="Red">Đỏ</label></li>
+                        <li><input type="checkbox" id="Orange">
+                            <label for="Orange">Cam</label></li>
+                        <li><input type="checkbox" id="Yellow">
+                            <label for="Yellow">Vàng</label></li>
+                        <li><input type="checkbox" id="Blue">
+                            <label for="Blue">Xanh dương</label></li>
+                        <li><input type="checkbox" id="Green">
+                            <label for="Green">Xanh lá</label></li>
+                        <li><input type="checkbox" id="Pink">
+                            <label for="Pink">Hồng</label></li>
+                        <li><input type="checkbox" id="Violet">
+                            <label for="Violet">Tím</label></li>
+                    </ul>
+                </li>
+                    
+                <li><div>Chất liệu</div>
+                    <ul class="menu menu-material">
+                        <li><input type="checkbox" id="DaThat">
+                            <label for="DaThat">Giày da thật</label></li>
+                        <li><input type="checkbox" id="Vai">
+                            <label for="Vai">Giày vải</label></li>
+                        <li><input type="checkbox" id="DaLon">
+                            <label for="DaLon">Giày da lộn</label></li>
+                        <li><input type="checkbox" id="DaTongHop">
+                            <label for="DaTongHop">Giày da tổng hợp</label></li>
+                        <li><input type="checkbox" id="Canvas">
+                            <label for="Canvas">Giày canvas</label></li>
+                        <li><input type="checkbox" id="PU">
+                            <label for="PU">Giày PU</label></li>
+                    </ul>
+                </li>
+                    
+                <li><div>Giới tính</div>
+                    <ul class="menu menu-sex">
+                        <li><input type="checkbox" id="Male">
+                            <label for="Male">Nam</label></li>
+                        <li><input type="checkbox" id="Female">
+                            <label for="Female">Nữ</label></li>
+                        <li><input type="checkbox" id="Unisex">
+                            <label for="Unisex">Unisex</label></li>
+                        <li><input type="checkbox" id="Child">
+                            <label for="Child">Trẻ em</label></li>
+                    </ul>
+                </li>
+                    
+                <li><div>Khoảng giá</div>
+                    <ul class="menu menu-price">
+                        <li><input class="box" type="money" placeholder="Từ"></li> 
+                        <li><input class="box" type="money" placeholder="Đến"></li>
+                        <li class="apply">Áp dụng</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div id="content">
+            <div class="lists">
+                <div class="item"   >
+                    <a href=""><img src="./assets/img/giay-nike-air-jordan-1-mid-se-dc1426-100-phoi-mau-6107a970a9c87-02082021151440.jpg" alt="">
+                        Giày Nike Air Jordan 1 Mid SE DC1426-100
+                    </a>
+                    <div class="shoe-discount">6.550.000 đ</div>
+                    <div class="shoe-cost">7.500.000 đ</div>
+                </div> 
+                <div class="item" >
+                    <a href=""><img src="./assets/img/giay-mlb-big-ball-chunky-cookie-new-york-yankees-32shcc111-50l-mau-den-5ffd3d7154992-12012021131057.jpg" alt="">
+                        Giày MLB Big Ball Chunky Cookie New York Yankees
+                    </a>   
+                    <div class="shoe-discount">2.190.000 đ</div>
+                    <div class="shoe-cost">2.500.000 đ</div>
+                </div> 
+                <div class="item" >
+                    <a href=""><img src="./assets/img/giay-the-thao-nike-air-force-1-07-lv8-3m-white-mau-trang-602e1897c5bc7-18022021143447.jpg" alt="">
+                        Giày Thể Thao Nike Air Force 1 '07 LV8 3M
+                    </a>
+                    <div class="shoe-discount">3.590.000 đ</div>
+                    <div class="shoe-cost">4.000.000 ₫  đ</div>
+                </div>
+                 <div class="item" >
+                    <a href=""><img src="./assets/img/giay-domba-high-point-white-black-h-9111-mau-trang-5d73226cf1019-07092019102220.jpg" alt="">
+                        Giày Thể Thao Domba High Point White/Black H-9111
+                    </a>
+                    <div class="shoe-discount">880.000 đ</div>
+                    <div class="shoe-cost">1.300.000 đ</div>
+                </div>
+                 <div class="item" >
+                    <a href=""><img src="./assets/img/giay-domba-high-point2-sliver-metallic-h-9116-mau-trang-got-bac-5f8503fb9d37f-13102020083347.jpg" alt="">
+                        Giày Domba High Point2 Sliver Metallic H-9116
+                    </a>
+                    <div class="shoe-discount">900.000 đ</div>
+                    <div class="shoe-cost">1.550.000 đ</div>
+                </div> 
+                 <div class="item" >
+                    <a href=""><img src="./assets/img/giay-domba-high-point-white-white-h-9115-5d75ca95a2d7f-09092019104421.jpg" alt="">
+                        Giày Thể Thao Domba High Point White/White H-9111
+                    </a>
+                    <div class="shoe-discount">950.000 đ</div>
+                    <div class="shoe-cost">1.650.000 đ</div>
+                </div> 
+                 <div class="item" >
+                    <a href=""><img src="./assets/img/giay-mlb-playball-new-york-yankees-32shp1011-50l-mau-den-size-260-600fdab9ce49f-26012021160249.png" alt="">
+                        Giày MLB Playball New York Yankees 32SHP1011-50L
+                    </a>
+                    <div class="shoe-discount">1.480.000 đ</div>
+                    <div class="shoe-cost">1.900.000 đ</div>
+                </div> 
+                 <div class="item" >
+                    <a href=""><img src="./assets/img/giay-mlb-big-ball-chunky-la-dodgers-32shcd111-07i-mau-trang-5ff3ef8f33b0a-05012021114815.jpg" alt="">
+                        Giày MLB Big Ball Chunky LA Dodgers 32SHCD111-07I
+                    </a>
+                    <div class="shoe-discount">2.890.000 đ</div>
+                    <div class="shoe-cost">3.250.000 đ</div>
+                </div>
+                 <div class="item" > 
+                    <a href=""><img src="./assets/img/giay-sneaker-mlb-big-bull-chunky-mickey-new-new-york-yankees-mau-trang-size-260-5e8c372a9c44f-07042020151746.jpg" alt="">
+                        Giày Sneaker MLB Big Bull Chunky Mickey New New York Yankees
+                    </a>
+                    <div class="shoe-discount">2.340.000 đ</div>
+                    <div class="shoe-cost">2.800.000 đ</div>
+                </div> 
+                
+                 <div class="item" >
+                    <a href=""><img src="./assets/img/giay-gucci-men-s-ace-embroidered-sneaker-white-leather-with-bee-mau-trang-5ef166d4e30a6-23062020092004.jpg" alt="">
+                        Giày Gucci Men's Ace Embroidered Sneaker White Leather With Bee
+                    </a>
+                    <div class="shoe-discount">12.570.000 đ</div>
+                    <div class="shoe-cost">15.600.000 đ</div>
+                </div> 
+                 <div class="item" >
+                    <a href=""><img src="./assets/img/giay-sneaker-mlb-bigball-chunky-mono-lt-mau-den-5e43c1da00a1a-12022020161402.jpg" alt="">
+                        Giày Sneaker MLB Bigball Chunky Mono LT 
+                    </a>
+                    <div class="shoe-discount">2.690.000 đ</div>
+                    <div class="shoe-cost">3.300.000 đ</div>
+                </div> 
+                 <div class="item" >
+                    <a href=""><img src="./assets/img/giay-the-thao-nu-adidas-originals-superstar-mau-trang-5e4e40f2156e6-20022020151858.jpg" alt="">
+                        Giày Thể Thao Nữ Adidas Originals Superstar
+                    </a>
+                    <div class="shoe-discount">1.950.000 đ</div>
+                    <div class="shoe-cost">2.150.000 đ</div>
+                </div> 
+                 <div class="item" >
+                    <a href=""><img src="./assets/img/giay-the-thao-dsquared2-50-s-rock-asylum-sneakers-mau-den-5e7db3f15c963-27032020150609.jpg" alt="">
+                        Giày Thể Thao Dsquared2 50's Rock Asylum Sneakers
+                    </a>
+                    <div class="shoe-discount">6.900.000 đ</div>
+                    <div class="shoe-cost">7.500.000 đ</div>
+                </div>
+                <div class="item" >
+                    <a href=""><img src="./assets/img/giay-the-thao-adidas-xvessel-slip-on-mau-den-5fc8ae311fe83-03122020162153.jpg" alt="">
+                        Giày Thể Thao Adidas Xvessel Slip-on
+                    </a>
+                    <div class="shoe-discount">6.800.000 đ</div>
+                    <div class="shoe-cost">7.300.000 đ</div>
+                </div> 
+                 <div class="item" >
+                    <a href=""><img src="./assets/img/giay-converse-chuck-taylor-all-star-renew-168595v-mau-den-trang-5fc88932c81e6-03122020134402.jpg" alt="">
+                        Giày Converse Chuck Taylor All Star Renew - 168595V
+                    </a>
+                    <div class="shoe-discount">1.850.000 đ</div>
+                    <div class="shoe-cost">2.200.000 đ</div>
+                </div> 
+                 <div class="item" >
+                    <a href=""><img src="./assets/img/giay-the-thao-adidas-continental-rascal-arizona-mau-den-5fc78d10cb1d7-02122020194816.jpg" alt="">
+                        Giày Thể Thao Adidas Continental Rascal Arizona
+                    </a>
+                    <div class="shoe-discount">1.800.000 đ</div>
+                    <div class="shoe-cost">2.200.000 đ</div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="lists-nav">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+     </div>     
+         <!-- footer  -->
+        <div id="footer">
+            <ul class="footer-menu">
+                <li><a href="">Cửa hàng</a>
+                    <ul class="info-store">
+                        <li><a href=""><img class="img-logo" src="./assets/img/logo.png" alt=""></a></li>
+                        <li><i class="ti-location-pin"></i>Địa chỉ: Thôn Quảng Xuyên, xã Phú Xuân, huyện Phú Vang
+                            ,tỉnh Thừa Thiên Huế</li>
+                        <li><i class="ti-mobile"></i>Hotline: 0364030812</li>
+                        <li><i class="ti-email"></i>Email: DdshopTTH@gmail.com</li>
+                    </ul>    
+                </li>
+                <li><a href="">Chính sách</a>
+                    <ul class="policy">
+                        <li><a href="">Chính sách đổi trả</a></li>
+                        <li><a href="">Chính sách bảo hành</a></li>
+                        <li><a href="">Chính sách thanh toán</a></li>
+                        <li><a href="">Chính sách vận chuyển</a></li>
+                        <li><a href="">Chính sách khuyến mãi</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Hướng dẫn</a>
+                    <ul class="help">
+                        <li><a href="">Hỗ trợ dịch vụ</a></li>
+                        <li><a href="">Hướng dẫn mua hàng</a></li>
+                        <li><a href="">Giao nhận & thanh toán</a></li>
+                        <li><a href="">Đổi trả & hoàn tiền</a></li>
+                    </ul>
+                </li>
+                <div class="clear"></div>
+            </ul>
+        </div>
+
+        <div class="addShoe">
+            <div class="addShoe-container">
+                <header>Thêm sản phẩm
+                    <i class="ti-close"></i>
+                </header>
+
+                <div class="addShoe-body">
+                    <div>
+                        <label>Img:</label>
+                        <input type="text" name="img" id="" placeholder="Image Sourrce...">
+                    </div>
+                    <div>
+                        <label>Info:</label>
+                        <input type="text" name="info" id="" placeholder="Shoe's infomation">
+                    </div>
+                    <div>
+                        <label>Discount:</label>
+                        <input type="text" name="discount" id="" placeholder="1000000">
+                    </div>
+                    
+                    <div>
+                        <label>Cost:</label>
+                        <input type="text" name="cost" id="" placeholder="1000000">
+                    </div>
+                    <div>
+                        <label>Amount:</label>
+                        <input type="text" name="amount" id="">
+                    </div>
+                    <div>
+                        <button id="create">Create</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- update -->
+        <div class="updateShoe">
+            <div class="updateShoe-container">
+                <header>Sửa sản phẩm
+                    <i class="ti-close"></i>
+                </header>
+
+                <div class="updateShoe-body">
+                    <div>
+                        <label>Img:</label>
+                        <input type="text" name="img" id="" placeholder="Image Sourrce...">
+                    </div>
+                    <div>
+                        <label>Info:</label>
+                        <input type="text" name="info" id="" placeholder="Shoe's infomation">
+                    </div>
+                    <div>
+                        <label>Discount:</label>
+                        <input type="text" name="discount" id="" placeholder="1000000">
+                    </div>
+                    
+                    <div>
+                        <label>Cost:</label>
+                        <input type="text" name="cost" id="" placeholder="1000000">
+                    </div>
+                    <div>
+                        <label>Amount:</label>
+                        <input type="text" name="amount" id="">
+                    </div>
+                    <div>
+                        <button id="update">Update</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+<script src="./app.js">
+</script>
+
+</html>

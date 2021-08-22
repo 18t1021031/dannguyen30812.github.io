@@ -1,0 +1,549 @@
+.disappear{
+    display: none;
+}
+
+
+/**/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    position: relative;
+}
+.clear{
+    clear: both;
+}
+#topbar {
+    position: relative;
+    margin-bottom: 7px;
+}
+.top-right{
+    background-color: rgb(114, 114, 114);
+    height: 30px;
+    width: 100%;
+    display: inline-block;
+    padding-left: 32px;
+}
+
+.top-right li.sub-shoe,
+.top-right li.add-shoe {
+    float: right;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    padding: 0 10px;
+}
+
+.top-right > li{
+    display: inline-block;
+}
+
+.top-right li{
+    position: relative;
+}
+.top-right > li > a{
+    display: inline-block;
+    color:white;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 6px;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.top-right .accout{
+    position: absolute;
+    left:-1px;
+    list-style-type: none;
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    display: none;
+}
+
+.top-right .accout li{
+    display: block;
+}
+.top-right .accout li a{
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 14px;
+}
+.top-right .accout li:hover a{
+    background-color: #ccc;
+}
+
+.top-right li.sub-shoe:hover,
+.top-right li.add-shoe:hover,
+.top-right li:hover a{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    cursor: pointer;
+}
+
+.top-right li:hover .accout{
+    display: block;
+}
+
+#navi{
+    height: 50px;
+}
+
+/* header */
+#header {
+    display: block;
+    text-align: center;
+    margin: 10px 10px 0 10px;
+}
+
+#logo {
+    margin: 0 30px 0 15px;
+    display: block;
+    width: 224px;
+    height: 50px;
+}
+#logo .logo-image{
+    float: left;
+    height: 50px;
+}
+#logo .logo-name{
+    height: 50px;
+    font-size: 30px;
+    float: left;
+    text-decoration: none;
+    color: black;
+    line-height: 48px;
+    padding: 0 10px;
+    border: 2px black solid;
+    display: block;
+}
+
+#bar{
+    height: 49px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+#nav{
+    display: inline-block;
+    margin: auto;
+}
+#nav > li{
+    display: inline-block;
+    text-align: center;
+}
+#nav li{
+    position: relative;
+}
+#nav li:hover .nav_TH,
+#nav li:hover .nav_GT,
+#nav li:hover .nav_PC,
+#nav li:hover .nav_MS,
+#nav li:hover .nav_CL{
+    display: block;
+}
+#nav > li > a{
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 50px;
+}
+/* @media screen and (max-width:880px) {
+    #nav > li > a{
+        text-transform: uppercase;
+        font-size: 13px;
+        line-height: 50px;
+    }
+    #nav{
+        padding: 0 70px;
+    }
+} */
+#nav li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0 10px;
+    display: block;
+    transition-duration: 0.3s;
+}   
+#nav> li:hover > a{
+    background-color: rgb(147, 239, 255);
+    color: rgb(0, 0, 0);
+}
+
+.nav_GT,
+.nav_PC,
+.nav_MS,
+.nav_CL,
+.nav_TH{
+    position:absolute;
+    box-shadow: 0 3px 12px rgb(211, 211, 211);
+    min-width: 160px;
+    display: none;
+    list-style-type: none;
+    background-color: rgb(252, 252, 252);
+    z-index: 1;
+}
+.nav_GT li a,
+.nav_PC li a,
+.nav_MS li a,
+.nav_CL li a,
+.nav_TH li a{
+    font-size: 18px;
+    line-height: 40px;
+}
+.nav_GT li:hover a,
+.nav_PC li:hover a,
+.nav_MS li:hover a,
+.nav_CL li:hover a,
+.nav_TH li:hover a{
+    background-color: rgb(183, 244, 255);
+}
+
+.search-bt {
+    position: absolute;
+    top: 37px;
+    right: 15px;
+    padding: 15px;
+}
+.search-bt:hover{
+    background-color: rgb(241, 129, 0);
+    cursor: pointer;
+}
+
+#center{
+    position: relative;
+    height: 1500px;
+}
+.search-ic{
+    color: black;
+    font-size: 18px;
+    line-height: 50px;
+}
+
+
+#slidebar{
+    float: left;
+}
+
+#slidebar li{
+    list-style-type: none;
+}
+
+#slidebar .SB-Menu{
+    margin: 30px 0 0 15px;
+    /* box-shadow: 0 0 10px #ccc; */
+    border: 1px solid #ccc;
+    padding-bottom: 40px;
+}
+
+.SB-Menu > li> div{
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 700;
+    color: rgb(66, 66, 66);
+    border-top: 1px solid #ccc;
+    display: block;
+}
+
+.menu-brand > li,
+.menu-size > li,
+.menu-origin > li,
+.menu-color > li,
+.menu-material > li,
+.menu-sex > li{
+    font-size: 15px;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    transition-duration: 0.2s;
+}
+
+.menu-brand > li:hover ,
+.menu-size > li:hover ,
+.menu-origin > li:hover ,
+.menu-color > li:hover ,
+.menu-material > li:hover ,
+.menu-sex > li:hover {
+    color: rgb(0, 219, 219);
+}
+
+.menu-price .box {
+    padding: 10px;
+    margin: 5px;
+    font-size: 12px;
+}
+
+.menu-price .apply{
+    background-color: black;
+    color: white;
+    margin: 5px;
+    padding: 6px;
+    float: right;
+}
+.menu-price .apply:hover{
+    cursor:pointer;
+    opacity: 0.5;
+}
+/* banner*/
+.banner{
+    width: 100%;
+    margin: 10px 0 ;
+}
+/* content */
+
+#content {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    left: 217px;
+    right: 15px;
+}
+
+#content .lists {
+    margin-top: 25px;
+}
+
+.lists .item{
+    width: 190px;
+    height: 334px;  
+    padding: 10px;
+    display: inline-table;
+    position: relative; 
+    border: 1px solid rgb(211, 211, 211);
+    margin: 5px;
+    transition-duration: 0.3s;
+}
+
+.lists .item:hover {
+    border: 1px solid aqua ;
+    box-shadow: 0 0 10px aqua ;
+}
+
+
+.item img{
+    width: 188px;
+    height: auto;
+    box-shadow: 0 0 3px rgb(211, 211, 211);
+}
+
+.item a{
+    font-size: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    transition-duration: 0.3s;
+}
+
+.item a:hover{
+    color: rgb(0, 143, 153);
+}
+
+
+.item .shoe-discount {
+    font-style: italic;
+    color: red;
+    margin-right: 20px;
+    padding-left: 15px ;
+    font-weight: 800;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    position: absolute;
+    bottom: 24px;
+}
+.item .shoe-cost{
+    font-style: italic;
+    text-decoration: line-through;
+    padding-left: 25px;
+    color: black;
+    opacity: 0.8;
+    margin: 3px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 5px;
+}
+
+/*lists nav*/
+.lists-nav a{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 4px 12px;
+    margin: 12px 4px;
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+.lists-nav a:hover{
+    color: aqua;
+    border: 1px solid aqua;
+}
+
+.lists button.edit {
+    bottom: 37px;
+}
+
+.lists button {
+    position: absolute;
+    bottom: 7px;
+    right: 6px;
+    padding: 2px;
+}
+.updateShoe,
+.addShoe {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.3);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.open{
+    display: flex;
+}
+
+.updateShoe-container,
+.addShoe-container{
+    background-color: white;
+    width: 50%;
+}
+
+.updateShoe-body,
+.addShoe-body {
+    padding: 10px 30px;
+}
+
+.updateShoe-container header,
+.addShoe-container header {
+    padding: 32px 100px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    background-color: rgb(1, 228, 228);
+    color: white;
+    position: relative;
+}
+
+.updateShoe-container i.ti-close, 
+.addShoe-container i.ti-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.updateShoe-container i.ti-close:hover, 
+.addShoe-container i.ti-close:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* @keyframes  */
+
+.updateShoe-body label,
+.addShoe-body label{
+    display: block;
+    font-size: 18px;
+    padding: 5px 20px;
+}
+
+.updateShoe-body input[type="text"],
+.addShoe-body input[type="text"] {
+    width: 100%;
+    padding: 5px 16px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+button#update,
+button#create {
+    padding: 8px 16px;
+    font-size: 18px;
+    float: right;
+    margin: 16px 0;
+}
+/*footer*/
+#footer{
+    background-color: #000;
+    margin-top: 6px;
+}
+
+.footer-menu > li{
+    color: white;
+    display: inline-block;
+    padding: 0 15px;
+    margin: 0 16px;
+    font-size: 20px;
+}
+
+.footer-menu > li > a {
+    display: block;
+    text-decoration: none;
+    color: rgb(0, 238, 255);
+    padding: 10px 0;
+}
+
+.footer-menu .policy,
+.footer-menu .help,
+.footer-menu .info-store{
+    top: 60px;
+    left: -65px;
+    width: 320px;
+}
+
+.footer-menu .policy,
+.footer-menu .help{
+    list-style: none;
+    left: 40px;
+}
+
+
+.info-store li{
+    font-size: 16px;
+    list-style: none;
+    padding: 10px 40px;
+}
+
+.policy li a,
+.help li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-size: 16px;
+    padding: 10px 40px;
+    display: inline-block;
+}
+
+.policy li:hover a,
+.help li:hover a{
+    color: rgb(0, 255, 242);
+    cursor: pointer;
+}
+
+.info-store i{
+    padding: 0 5px;
+}
+.info-store .img-logo{  
+    width: 100%;
+    border: 1px solid white;
+}
